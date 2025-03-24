@@ -2,13 +2,117 @@
 <html lang="en">
 
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Test</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ART 320: Web Design &amp; Development</title>
+
+        <!-- GOOGLE FONTS -->
+        <!-- ADOBE FONTS -->
+        <link rel="stylesheet" href="https://use.typekit.net/muv0rbl.css">
+
+        <!-- SWIPER CSS STUFFS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css.css">
+
+        <!-- MAIN CSS -->
+        <link rel="stylesheet" href="css/style.css?v=0.0" />
+
     </head>
 
     <body>
-        <h1>This is my link to my <a href="https://demo-uhwo.github.io/">website.</a></h1>
+        <header class="site-header on-top-of-hero">
+            <div class="site-logo">
+                <a href="index.html">
+                    <img src="img/bean.svg" alt="Site Base Logo" width="50" height="50">
+                </a>
+                <h1><a class="hide-visuallyx" href="index.html">ART 320</a></h1>
+            </div>
+            <!-- <div id="menu"></div> -->
+            <nav class="site-header-nav toggle-menu" data-menustate="closed">
+                <button class="site-menu-button">
+                    <span class="hide-visually">Menu</span>
+                    <svg class="simple-navicon" width="24" height="21">
+                        <rect class="simple-navicon-top" x="0" y="2" height="3" width="24"></rect>
+                        <rect class="simple-navicon-middle" x="0" y="9" height="3" width="24"></rect>
+                        <rect class="simple-navicon-bottom" x="0" y="16" height="3" width="24"></rect>
+                    </svg>
+                </button>
+                <ul class="site-menu">
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="" class="site-main">
+            <section class="hero">
+                <div class="container">
+                    <div class="row swapped">
+                        <div class="one-half">
+                            <img src="img/undraw_web-development_0wdh.svg" alt="web development" width="1080" height="1080">
+                        </div>
+                        <div class="one-half">
+                            <h1>ART 320:</h1>
+                            <h2>Web Design and Development</h2>
+                            <p>is designed to introduce you to the fundamentals of web design and development, focusing on essential UX/UI design skills such as creating wireframes, high-fidelity prototypes, and design systems in Figma for the functional web, to hands-on HTML and CSS foundations, and the various aspects of the product development lifecycle.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                <div class="container">
+                    <h2 class="sectionhead">Helpful Links</h2>
+                    <div class="row ">
+                        <div class="helpfullinks">
+                            <ul>
+                                <li><a href="https://github.com/demo-uhwo">github - demo</a></li>
+                                <li><a href="https://codepen.io/">codepen</a></li>
+                                <li><a href="https://laulima.hawaii.edu/">Laulima</a></li>
+                                <li><a href="https://swiperjs.com/">swiper js</a></li>
+                                <li><a href="https://fancyapps.com/showcase/">fancyapps showcase</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <footer class="site-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="two-thirds">
+                            <h2>ART 320 <br /><span class="white">Web Design &amp; Development</span></h2>
+                            <p>Pre: ART 229 with a grade of C or better; or instructor approval.</p>
+                            <p>Students will plan, design, and launch a complete website with creative interfaces, strong graphic images, functional site organization, and logical navigation.</p>
+                        </div>
+                        
+                    </div>
+
+                    <p class="small">&copy; lummelis <span class="caps">Spring</span> 2025 &mdash; ART 320 | University of Hawai&#699;i at West O&#699;ahu
+                    </p>
+                </div>
+            </footer>
+
+        </main>
+        <!-- Start of Smooth Scroll -->
+        <script src="https://min30327.github.io/luxy.js/dist/js/luxy.js"></script>
+
+        <script charset="utf-8">
+            var isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
+            if (!isMobile) {
+                luxy.init({
+                    wrapper: '#luxy',
+                    wrapperSpeed: 0.065,
+
+                });
+            }
+        </script>
+        <!-- MAIN JS FILE -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/reefjs@13/dist/reef.min.js"></script>
+        <script src="js/script.js"></script>
+
+
     </body>
 
 </html>
